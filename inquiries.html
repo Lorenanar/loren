@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Validation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="inquiries.css" />
+    <script defer src="./inquiries.js"></script>
+  </head>
+  <body>
+
+  	<h1 class="top">INQUIRIES</h1>
+    <div class="container">
+      <form autocomplete="off">
+        <h2>Camella Inquiries</h2>
+        <div class="input-section">
+          <label>First Name <span class="required-color">*</span></label>
+          <input type="text"placeholder="Enter First Name" id="first-name-input"  required="" />
+          <span id="first-name-error" class="hide required-color error-message"
+            >Invalid Input</span
+          >
+          <span id="empty-first-name" class="hide required-color error-message"
+            ></span
+          >
+        </div>
+        <div class="input-section">
+          <label>Last Name<span class="required-color">*</span></label>
+          <input
+            type="text "
+            placeholder="Enter Last Name"
+            id="last-name-input"
+            required
+          />
+          <span id="last-name-error" class="hide required-color error-message"
+            >Invalid Input</span
+          >
+          <span id="empty-last-name" class="hide required-color error-message">
+            Last Name Cannot Be Empty
+          </span>
+        </div>
+
+        <div class="input-section">
+          <label>Email <span class="required-color">*</span></label>
+          <input type="email" placeholder="Enter Email" id="email" required />
+          <span id="email-error" class="hide required-color error-message"
+            >Invalid Email</span
+          >
+          <span id="empty-email" class="hide required-color error-message"
+            >Email Cannot Be Empty</span
+          >
+        </div>
+
+        <div class="input-section">
+          <label>Phone <span class="required-color">*</span></label>
+          <input
+            type="text"
+            placeholder="Enter Phone Number"
+            id="phone"
+            required
+          />
+          <span id="phone-error" class="hide required-color error-message"
+            >Phone Number Should Have 10 Digits</span>
+
+          <span id="empty-phone" class="hide required-color error-message">
+            Phone cannot be empty
+          </span>
+        </div>
+
+        <div class="input-section">
+       	<label>Province <span class="required-color">*</span></label>
+<select class="province" required>
+<option value="">--None--</option>
+<option value="Agusan Del Norte">Agusan Del Norte</option>
+<option value="Aklan">Aklan</option>
+<option value="Albay">Albay</option>
+<option value="Bacolod City">Bacolod City</option>
+<option value="Bataan">Bataan</option>
+<option value="Bataan">Bataan</option>
+<option value="Batangas">Batangas</option>
+<option value="Bicol">Bicol</option>
+<option value="Bohol">Bohol</option>
+<option value="Bulacan">Bulacan</option>
+<option value="Butuan">Butuan</option>
+<option value="Cagayan">Cagayan</option>
+<option value="Cagayan De Oro">Cagayan De Oro</option>
+<option value="Camarines Sur">Camarines Sur</option>
+<option value="Capiz">Capiz</option>
+<option value="Cavite">Cavite</option>
+<option value="Cebu">Cebu</option>
+<option value="Davao">Davao</option>
+<option value="Davao Del Norte">Davao Del Norte</option>
+<option value="Davao Del Sur">Davao Del Sur</option>
+<option value="General Santos">General Santos</option>
+<option value="Ilocos Norte">Ilocos Norte</option>
+<option value="Ilocos Norte">Ilocos Norte</option>
+<option value="Ilocos Sur">Ilocos Sur</option>
+<option value="Iloilo">Iloilo</option>
+<option value="Isabela">Isabela</option>
+<option value="Koronadal">Koronadal</option>
+<option value="Laguna">Laguna</option>
+<option value="Laguna">Laguna</option>
+<option value="Leyte">Leyte</option>
+<option value="Metro Manila">Metro Manila</option>
+<option value="Misamis Oriental">Misamis Oriental</option>
+<option value="Negros Occidental">Negros Occidental</option>
+<option value="Negros Oriental">Negros Oriental</option>
+<option value="Nueva Ecija">Nueva Ecija</option>
+<option value="Palawan">Palawan</option>
+<option value="Pampanga">Pampanga</option>
+<option value="Pangasinan">Pangasinan</option>
+<option value="Quezon">Quezon</option>
+<option value="Quezon Province">Quezon Province</option>
+<option value="Rizal">Rizal</option>
+<option value="Sorsogon">Sorsogon</option>
+<option value="South Cotabato">South Cotabato</option>
+<option value="Tagum">Tagum</option>
+<option value="Tarlac">Tarlac</option>
+<option value="Zambales">Zambales</option>
+</select>
+</div>
+
+<div>
+<label>Unit Type <span class="required-color">*</span></label>
+<select class="unit" required>
+<option value="">--None--</option>
+<option value="Bungalow">Bungalow</option>
+<option value="Bungalow">Condominium</option>
+<option value="Single Detached">Single Detached</option>
+<option value="Single Firewall">Single Firewall</option>
+<option value="Townhomes">Townhomes</option>
+</select>
+</div>
+
+<div>
+<label>TCP Range <span class="required-color">*</span></label>
+<select class="range" required>
+<option value="">--None--</option>
+<option value="2.5M-3.2M">2.5M-3.2M</option>
+<option value="3.2M-4.5M">3.2M-4.5M</option>
+<option value="4.5M-6M">4.5M-6M</option>
+<option value="6M-8M">6M-8M</option>
+<option value="8M-10M">8M-10M</option>
+<option value="10M-15M">10M-15M</option>
+<option value="15M-20M">15M-20M</option>
+<option value="More than 20M">More than 20M</option>
+</select>
+</div>
+
+<div>
+<label>Product Interest <span class="required-color">*</span> </label>
+<select class="interest" required>
+<option value="">--None--</option>
+<option value="Lot Only">Lot Only</option>
+<option value="2 bedrooms">2 bedrooms</option>
+<option value="3 bedrooms">3 bedrooms</option>
+<option value="4 bedrooms">4 bedrooms</option>
+<option value="5 bedrooms">5 bedrooms</option>
+</select>
+</div>
+
+        <button id="submit-button">Signup</button>
+      </form>	
+    </div>
+  </body>
+</html>
